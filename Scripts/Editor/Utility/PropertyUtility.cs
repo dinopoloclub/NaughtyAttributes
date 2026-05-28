@@ -33,7 +33,7 @@ namespace NaughtyAttributes.Editor
                 ? property.displayName
                 : labelAttribute.Label;
 
-            GUIContent label = new GUIContent(labelText);
+            GUIContent label = new GUIContent(labelText, property.tooltip);
             return label;
         }
 
